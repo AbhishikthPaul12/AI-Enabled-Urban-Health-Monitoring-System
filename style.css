@@ -1,0 +1,73 @@
+body{
+background: linear-gradient(120deg,#e3f2fd,#f8fbff);
+font-family: 'Segoe UI', sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar{
+height:100vh;
+width:240px;
+position:fixed;
+background: linear-gradient(180deg,#0d6efd,#4dabf7);
+padding:25px;
+color:white;
+box-shadow:4px 0 15px rgba(0,0,0,0.1);
+}
+
+.sidebar h4{
+margin-bottom:30px;
+font-weight:600;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:12px;
+border-radius:8px;
+margin-bottom:8px;
+font-weight:500;
+}
+
+.sidebar a:hover{
+background:rgba(255,255,255,0.2);
+}
+
+.main{
+margin-left:260px;
+padding:40px;
+}
+
+.card{
+border:none;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.page-title{
+font-weight:700;
+margin-bottom:25px;
+}
+
+.metric{
+font-size:22px;
+font-weight:600;
+color:#0d6efd;
+}
+
+.btn-primary{
+border-radius:10px;
+padding:10px;
+}
+
+.btn-success{
+border-radius:10px;
+padding:10px;
+}
+
+.chart-card{
+background:white;
+padding:20px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}

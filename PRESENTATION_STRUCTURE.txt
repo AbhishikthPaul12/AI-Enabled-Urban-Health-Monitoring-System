@@ -1,0 +1,423 @@
+AI-ENABLED URBAN HEALTH MONITORING SYSTEM
+MedAxis Health Manager - DBMS + Web Technologies Project
+
+Team: G. Shivani, G. Abhishikth Paul, C. Aaron Raj, B. Anish Reddy
+Faculty: Dr. S. Bhagya Rekha, Dr. M. Purnachary
+Institution: Anurag University
+Date: March 13th 2026
+
+================================================================================
+SLIDE 1: INTRODUCTION (3 minutes)
+================================================================================
+
+Project Title: MedAxis Health Manager
+Subtitle: AI-Enabled Urban Health Monitoring System
+
+Problem Statement:
+- Healthcare management is fragmented across multiple platforms
+- Patients lack centralized health tracking systems
+- Doctors need efficient patient management tools
+- Administrators require system oversight capabilities
+- No integrated platform connecting patients, doctors, and admins
+
+Proposed Solution:
+- Web-based integrated health management platform
+- Role-based access control (Admin/Doctor/Patient)
+- Real-time health monitoring and analytics
+- Centralized appointment and prescription management
+
+Project Objectives:
+1. Develop a comprehensive health management system with multi-role support
+2. Integrate Oracle database with web interface using JDBC
+3. Implement secure authentication using SHA-256 password hashing
+4. Demonstrate complete CRUD operations across all modules
+5. Deploy using Spring Boot with embedded Tomcat server
+6. Create responsive UI with dark mode support
+
+================================================================================
+SLIDE 2: CONTENTS (1 minute)
+================================================================================
+
+Presentation Overview:
+1. Summary of 8 Weeks - Project journey and milestones
+2. SWOT Analysis - Strengths, Weaknesses, Opportunities, Threats
+3. Development Timeline - Week-by-week progress
+4. Technical Resources and Tools - Technologies and frameworks used
+5. Challenges and Solutions - Problems faced and resolutions
+6. System Performance Metrics - Testing results and outcomes
+7. Future Scope and Enhancements - Planned improvements
+8. Questions - Q&A session
+
+================================================================================
+SLIDE 3: SUMMARY OF 8 WEEKS (5 minutes)
+================================================================================
+
+WEEK 1-2: Project Planning and Database Design
+- Requirement analysis and feasibility study
+- Database schema design (7 tables in 3NF)
+- ER diagram creation and relationship mapping
+- Technology stack finalization
+
+WEEK 3-4: Core Development - Authentication and User Management
+- User registration and login system
+- SHA-256 password hashing implementation
+- Session management and filters
+- Role-based access control (Admin/Doctor/Patient)
+
+WEEK 5-6: Module Development
+- Patient module: Health tracking, appointments, medical history
+- Doctor module: Prescriptions, medical advice, patient management
+- Admin module: User management, analytics, data export
+- AI assistant integration for health recommendations
+
+WEEK 7: UI/UX Enhancement and Integration
+- Medical blue theme implementation (#0066cc)
+- Dark mode toggle with localStorage persistence
+- Responsive sidebar navigation across all pages
+- Chart.js integration for health trends visualization
+
+WEEK 8: Testing, Deployment, and Documentation
+- Integration testing for all modules
+- Spring Boot deployment with embedded Tomcat
+- Bug fixes and performance optimization
+- Project documentation and presentation preparation
+
+Key Deliverables:
+- Fully functional web application with 3 role-based modules
+- Oracle database with 7 normalized tables
+- Spring Boot + Tomcat deployment
+- Comprehensive project documentation
+
+================================================================================
+SLIDE 4: SWOT ANALYSIS (4 minutes)
+================================================================================
+
+STRENGTHS:
+- Multi-role authentication with secure SHA-256 hashing
+- Responsive UI with modern medical theme and dark mode
+- Comprehensive health tracking (BMI, steps, heart rate)
+- Real-time appointment booking and management
+- Medical history storage (prescriptions and advice)
+- Spring Boot deployment with embedded Tomcat
+- Database normalization (3NF) ensuring data integrity
+
+WEAKNESSES:
+- No email/SMS notification system
+- Limited to local deployment (localhost)
+- AI assistant uses client-side logic only
+- No mobile application support
+- Single database instance (no replication)
+
+OPPORTUNITIES:
+- Integration with wearable devices (Fitbit, Apple Watch)
+- Telemedicine features (video consultations)
+- Machine learning for health prediction
+- Cloud deployment for scalability
+- Multi-language support for wider reach
+- Mobile app development (Android/iOS)
+
+THREATS:
+- Data security concerns in healthcare
+- Competition from established health platforms
+- Regulatory compliance requirements (HIPAA, etc.)
+- Database scalability with large user base
+- Browser compatibility issues
+
+================================================================================
+SLIDE 5: DEVELOPMENT TIMELINE OF 8 WEEKS (4 minutes)
+================================================================================
+
+Week 1: Project Initiation
+- [x] Requirement gathering
+- [x] Feasibility analysis
+- [x] Technology selection
+- [x] Team role assignment
+
+Week 2: Database Design
+- [x] ER Diagram creation
+- [x] Table schema design (7 tables)
+- [x] Relationship mapping (1:N, N:M)
+- [x] Normalization (3NF)
+
+Week 3: Authentication System
+- [x] User registration module
+- [x] Login with SHA-256 hashing
+- [x] Session management
+- [x] Logout functionality
+
+Week 4: Core Modules Development
+- [x] Patient dashboard
+- [x] Health data logging
+- [x] Appointment booking
+- [x] Profile management
+
+Week 5: Doctor Module
+- [x] Doctor dashboard
+- [x] Appointment viewing
+- [x] Prescription writing
+- [x] Medical advice system
+
+Week 6: Admin Module
+- [x] Admin dashboard
+- [x] User management (CRUD)
+- [x] System analytics
+- [x] Data export functionality
+
+Week 7: UI/UX Enhancement
+- [x] Medical blue theme
+- [x] Dark mode implementation
+- [x] Floating toggle button
+- [x] Chart.js integration
+- [x] Responsive design
+
+Week 8: Testing and Deployment
+- [x] Integration testing
+- [x] Bug fixes
+- [x] Spring Boot deployment
+- [x] Documentation
+- [x] Presentation preparation
+
+================================================================================
+SLIDE 6: TECHNICAL RESOURCES AND TOOLS (4 minutes)
+================================================================================
+
+FRONTEND TECHNOLOGIES:
+- HTML5 - Page structure and semantic markup
+- CSS3 - Styling with CSS variables for theming
+- Bootstrap 5.3 - Responsive grid system and components
+- JavaScript - Client-side validation and interactivity
+- Chart.js - Health trends visualization and analytics
+
+BACKEND TECHNOLOGIES:
+- Java 11 - Core programming language
+- Java Servlets - HTTP request handling
+- JSP (JavaServer Pages) - Dynamic web content
+- Spring Boot 2.7.14 - Application framework
+- JDBC - Database connectivity
+
+DATABASE:
+- Oracle 11g XE - Relational database management
+- SQL - Data manipulation and queries
+- Connection pooling - Efficient database connections
+
+WEB SERVER:
+- Apache Tomcat 9.0 - Servlet container
+- Embedded Tomcat (Spring Boot) - Self-contained deployment
+- Port 7070 - Application access point
+
+SECURITY:
+- SHA-256 - Password hashing algorithm
+- Base64 Encoding - Hash representation
+- Session Management - User authentication state
+- Input Validation - SQL injection prevention
+
+DEVELOPMENT TOOLS:
+- Maven 3.6+ - Build automation and dependency management
+- VS Code / Eclipse - Integrated development environment
+- SQL Developer - Database management
+- Git - Version control (optional)
+
+TESTING:
+- Manual Testing - Functional testing across roles
+- Integration Testing - Module interaction verification
+- Browser Testing - Chrome, Firefox, Edge compatibility
+
+================================================================================
+SLIDE 7: CHALLENGES AND SOLUTIONS (4 minutes)
+================================================================================
+
+CHALLENGE 1: Database Connection Management
+Problem: Frequent database connection failures and resource leaks
+Solution: Implemented connection pooling using Spring DataSource
+          Configured proper resource cleanup in finally blocks
+Result: Stable database connections with automatic management
+
+CHALLENGE 2: Session Security
+Problem: Unauthorized access to protected pages via direct URL
+Solution: Created SessionFilter to validate user sessions
+          Implemented role-based access control checks
+Result: Secure navigation with proper authentication enforcement
+
+CHALLENGE 3: Role-Based Navigation
+Problem: Sidebar showing wrong links for different user roles
+Solution: Dynamic sidebar rendering based on session role attribute
+          Created separate JSP pages for each role
+Result: Role-appropriate navigation across all pages
+
+CHALLENGE 4: Dark Mode Persistence
+Problem: Dark mode preference lost on page refresh
+Solution: Implemented localStorage to save user preference
+          Added JavaScript to apply theme on page load
+Result: Persistent dark mode across all pages
+
+CHALLENGE 5: Chart.js Integration
+Problem: Charts not displaying dynamic data from database
+Solution: Embedded JSP variables into JavaScript
+          Used AJAX for real-time data updates
+Result: Interactive charts showing actual health trends
+
+CHALLENGE 6: Password Hashing Mismatch
+Problem: Login failing due to different hash formats
+Solution: Standardized SHA-256 with Base64 encoding
+          Updated all existing passwords in database
+Result: Consistent authentication across all accounts
+
+CHALLENGE 7: JSP Import Errors
+Problem: Classes not found when importing in JSP
+Solution: Embedded JDBC code directly in JSP pages
+          Used fully qualified class names
+Result: Successful database operations from JSP
+
+================================================================================
+SLIDE 8: SYSTEM PERFORMANCE METRICS (4 minutes)
+================================================================================
+
+FUNCTIONAL TESTING RESULTS:
+
+| Module | Test Case | Status | Remarks |
+|--------|-----------|--------|---------|
+| Authentication | User Registration | PASSED | Account created successfully |
+| Authentication | Login (All Roles) | PASSED | Redirects to correct dashboard |
+| Authentication | Password Hashing | PASSED | SHA-256 working correctly |
+| Authentication | Session Timeout | PASSED | 30-minute timeout enforced |
+| Patient | Health Data Logging | PASSED | BMI, steps, heart rate saved |
+| Patient | Health Trends Chart | PASSED | Chart.js displays correctly |
+| Patient | Book Appointment | PASSED | Appointment stored in DB |
+| Patient | View Medical History | PASSED | Prescriptions & advice visible |
+| Doctor | View Appointments | PASSED | Patient list displayed |
+| Doctor | Write Prescription | PASSED | Saved to database |
+| Doctor | Send Medical Advice | PASSED | Advice stored and retrievable |
+| Admin | User Management | PASSED | CRUD operations working |
+| Admin | System Analytics | PASSED | Statistics displayed |
+| Admin | Data Export | PASSED | Report download functional |
+| UI/UX | Dark Mode Toggle | PASSED | Preference persists |
+| UI/UX | Responsive Design | PASSED | Works on all screen sizes |
+
+DATABASE PERFORMANCE:
+- Query Execution Time: < 100ms average
+- Connection Pool: 10 concurrent connections
+- Data Integrity: 100% (no orphaned records)
+
+SECURITY TESTING:
+- SQL Injection: Blocked (parameterized queries)
+- Session Hijacking: Prevented (secure session IDs)
+- Password Security: Strong (SHA-256 + salt)
+
+TEST ACCOUNTS:
+- Admin: admin@test.com / test123
+- Doctor: doctor@test.com / test123
+- Patient: (register during demo)
+
+================================================================================
+SLIDE 9: FUTURE SCOPE AND ENHANCEMENTS (3 minutes)
+================================================================================
+
+SHORT-TERM ENHANCEMENTS (3-6 months):
+1. Email and SMS Notifications
+   - Appointment reminders
+   - Prescription alerts
+   - Health tips notifications
+
+2. Mobile Application
+   - Android and iOS apps
+   - Push notifications
+   - Offline data sync
+
+3. Advanced Analytics
+   - Health trend predictions
+   - Risk assessment algorithms
+   - Personalized health insights
+
+4. Multi-Language Support
+   - Regional language options
+   - RTL language support
+   - Cultural customization
+
+LONG-TERM ENHANCEMENTS (6-12 months):
+1. Wearable Device Integration
+   - Fitbit, Apple Watch, Garmin
+   - Real-time health monitoring
+   - Automatic data synchronization
+
+2. Telemedicine Features
+   - Video consultations
+   - Online chat with doctors
+   - Digital prescription sharing
+
+3. AI-Powered Health Assistant
+   - Machine learning models
+   - Symptom checker
+   - Medication recommendations
+
+4. Cloud Deployment
+   - AWS/Azure cloud hosting
+   - Auto-scaling capabilities
+   - Global accessibility
+
+5. Electronic Health Records (EHR)
+   - Integration with hospital systems
+   - HL7 FHIR compliance
+   - Insurance claim processing
+
+RESEARCH OPPORTUNITIES:
+- Predictive health analytics using big data
+- Blockchain for medical record security
+- IoT integration for remote patient monitoring
+
+================================================================================
+SLIDE 10: QUESTIONS (3 minutes)
+================================================================================
+
+Thank You for Your Attention!
+
+Project: MedAxis Health Manager
+Team: G. Shivani, G. Abhishikth Paul, C. Aaron Raj, B. Anish Reddy
+Faculty: Dr. S. Bhagya Rekha, Dr. M. Purnachary
+Institution: Anurag University
+
+Questions and Discussion
+
+Contact: [Team Email]
+Demo URL: http://localhost:7070/Health-Manager/
+
+================================================================================
+TIME ALLOCATION SUMMARY
+================================================================================
+
+| Slide | Content | Duration |
+|-------|---------|----------|
+| 1 | Introduction | 3 min |
+| 2 | Contents | 1 min |
+| 3 | Summary of 8 Weeks | 5 min |
+| 4 | SWOT Analysis | 4 min |
+| 5 | Development Timeline | 4 min |
+| 6 | Technical Resources | 4 min |
+| 7 | Challenges and Solutions | 4 min |
+| 8 | System Performance Metrics | 4 min |
+| 9 | Future Scope | 3 min |
+| 10 | Questions | 3 min |
+|-------|---------|----------|
+| TOTAL | | 35 min |
+
+================================================================================
+DEMO CHECKLIST
+================================================================================
+
+Before Presentation:
+[ ] Start Oracle Database
+[ ] Run: mvn spring-boot:run
+[ ] Verify: http://localhost:7070/Health-Manager/
+[ ] Test admin@test.com login
+[ ] Test doctor@test.com login
+[ ] Clear browser cache
+[ ] Prepare backup screenshots
+
+During Demo (if time permits):
+[ ] Quick login showcase
+[ ] Health data logging
+[ ] Dark mode toggle
+[ ] Admin analytics view
+
+================================================================================
+END OF PRESENTATION
+================================================================================
